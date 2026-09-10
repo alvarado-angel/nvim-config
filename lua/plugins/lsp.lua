@@ -4,6 +4,7 @@ return {
 		vim.lsp.enable({
 			"pyright", -- python
 			"stylua", -- lua
+			"marksman", -- markdown
 		})
 		vim.api.nvim_create_autocmd("LspAttach", {
 			callback = function(ev)
