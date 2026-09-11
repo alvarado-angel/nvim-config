@@ -5,6 +5,8 @@ return {
 			"pyright", -- python
 			"stylua", -- lua
 			"marksman", -- markdown
+			"postgres-language-server", -- sql y postgres
+			"yaml-language-server", -- yaml
 		})
 		vim.api.nvim_create_autocmd("LspAttach", {
 			callback = function(ev)
