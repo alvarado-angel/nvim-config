@@ -11,9 +11,15 @@ vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit" })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- formateo de documento
 vim.keymap.set("n", "<leader>fm", function()
 	require("conform").format()
 end, { desc = "Formateando documento" })
 
+-- md preview
+vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreview<cr>", { desc = "Abrir Preview" })
+vim.keymap.set("n", "<leader>ms", "<cmd>MarkdownPreviewStop<cr>", { desc = "Cerrar Preview" })
+
+-- neotree
 vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<cr>", { desc = "toggle Neotree" })
 vim.keymap.set("n", "<leader>o", "<cmd>Neotree focus<cr>", { desc = "focus Neotree" })
